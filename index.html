@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IslamicLandmarks.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="./assets/css/app.min.css">
+    <style>
+        /* TODO */
+    </style>
+</head>
+<body>
+    <div class="app-page" data-page="home">
+        <div class="app-topbar">
+            <div class="app-title">IslamicLandmarks.com</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section">
+                <div class="app-button" data-target="landmarks">Makkah</div>
+                <div class="app-button" data-target="landmarks">Madina</div>
+                <div class="app-button" data-target="landmarks">Palestine</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="landmarks">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Landmarks</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section">
+                <div class="app-button" data-target="landmark_details">Kabah</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="landmark_details">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Landmark Detail</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section">
+                <p>Test data</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/zepto.js"></script>
+    <script src="./assets/js/app.min.js"></script>
+    <script src="./src/controllers/HomeController.class.js"></script>
+    <script src="./src/controllers/LandmarksController.class.js"></script>
+    <script src="./src/controllers/LandmarkDetailsController.class.js"></script>
+    <script>
+        try {
+            App.restore();
+        } catch (err) {
+            App.load('home');
+        }
+    </script>
+</body>
+
+</html>
