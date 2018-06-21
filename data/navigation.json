@@ -1,0 +1,31 @@
+[
+    {
+        "id": "makkah",
+        "title": "Makkah",
+        "contents": [
+            {
+                "id": "the-city-of-makkah",
+                "title": "The city of Makkah",
+                "file_path": "/data/datastore/the-city-of-makkah.json"
+            },
+            {
+                "id": "the-kabah",
+                "title": "The Ka’bah",
+                "file_path": "/data/datastore/the-kabah.json"
+            },
+            {
+                "id": "inside-the-kabah",
+                "title": "Inside the Ka’bah",
+                "file_path": "/data/datastore/inside-the-kabah.json"
+            }
+        ]
+    },
+    {
+        "id": "medina",
+        "title": "Medina"
+    },
+    {
+        "id": "palestine",
+        "title": "Palestine"
+    }
+]
